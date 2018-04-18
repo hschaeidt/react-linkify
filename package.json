@@ -25,6 +25,7 @@
     "urlify"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "build": "babel src/ -d dist/",
     "prepublish": "npm run build",
     "test": "BABEL_JEST_STAGE=0 jest --testPathIgnorePatterns /dist/"
